@@ -1,0 +1,145 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #fff;
+  /*background-color: #4158d0;
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);*/
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: 0.5s ease;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Animations */
+@keyframes fadeBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  55% {
+    transform: translateY(-6px);
+  }
+  70% {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Making my nav header */
+header {
+  background: #f5f5f5;
+  position: relative;
+  transition: 0.5s;
+}
+.nav-container {
+  width: 97%;
+  height: auto;
+  margin: auto;
+  height: 79.8px;
+}
+#logo {
+  width: 5%;
+  position: relative;
+  top: 6px;
+  left: 30px;
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  transition: 0.5s;
+}
+nav {
+  float: right;
+  opacity: 0;
+  animation: fadeBounce 1s forwards;
+}
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation li {
+  list-style-image: none;
+  margin: 0 23px;
+  transition: 0.5ms;
+  float: left;
+  margin-top: 23px;
+}
+.navigation li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+  color: #111;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.navigation:hover li a {
+  /*transform: scale(1.4);*/
+  opacity: 0.3;
+  /*filter: blur(5px);*/
+}
+.navigation li a:hover {
+  transform: scale(1.4);
+  opacity: 1;
+  filter: blur(0);
+}
+.navigation li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  z-index: -1;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation li a:hover::before {
+  transition: transform 0.5s;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
