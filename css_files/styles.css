@@ -124,7 +124,7 @@ nav {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #D2042D;
+  background: #d2042d;
   z-index: -1;
   transform-origin: bottom right;
   transform: scaleX(0);
@@ -136,74 +136,63 @@ nav {
   transform: scaleX(1);
 }
 /* Image slider for main content of Home page */
-.image-sliders
-{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #111;
+.image-sliders {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #111;
 }
-.image-sliders .slides
-{
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    clip-path: inset(0 100% 0 0);
-    
+.image-sliders .slides {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: inset(0 100% 0 0);
 }
-.image-sliders .slides.active
-{
-    clip-path: inset(0 0 0 0);
-    transition: 2.3s ease;
-    transition-property: clip-path;
+.image-sliders .slides.active {
+  clip-path: inset(0 0 0 0);
+  transition: 2.3s ease;
+  transition-property: clip-path;
 }
-.image-sliders .slides img
-{
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: 1;
-
+.image-sliders .slides img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
-.image-sliders .button-navigation
-{
-    position: absolute;
-    display: flex;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+.image-sliders .button-navigation {
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
-.image-sliders .button-navigation .buttons
-{
-    margin: 10px;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: #999;
+.image-sliders .button-navigation .buttons {
+  margin: 10px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #999;
 }
-.image-sliders .button-navigation .buttons.active{
-    background: #111;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+.image-sliders .button-navigation .buttons.active {
+  background: #111;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
 }
 /* About Us Home Page */
-.about{
+.about {
   width: 100%;
   padding: 78px 0px;
   background-color: #191919;
 }
-.about img{
+.about img {
   height: auto;
   width: 320px;
 }
-.about-text
-{
+.about-text {
   width: 600px;
-
 }
-.about-container
-{
+.about-container {
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
@@ -211,15 +200,14 @@ nav {
   align-items: center;
   justify-content: space-around;
 }
-.about-text h1{
+.about-text h1 {
   color: white;
   font-size: 70px;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.about-text p
-{
-  color: #D2042D;
+.about-text p {
+  color: #d2042d;
   letter-spacing: 1px;
   line-height: 30px;
   font-size: 18px;
@@ -262,8 +250,7 @@ footer .footer-container .section.subscribe {
   overflow: hidden;
   visibility: hidden;
 }
-.subscribe input[type="email"]
-{
+.subscribe input[type="email"] {
   width: 95%;
   display: block;
   box-sizing: border-box;
@@ -273,12 +260,11 @@ footer .footer-container .section.subscribe {
   border-radius: 2px;
   outline: none;
 }
-.subscribe input[type="submit"]
-{
+.subscribe input[type="submit"] {
   width: 50%;
   display: block;
   box-sizing: border-box;
-  background-color: #D2042D;
+  background-color: #d2042d;
   color: #fff;
   padding: 10px 0;
   margin-top: 10px;
@@ -396,4 +382,163 @@ footer li a {
   .copyright {
     padding: 8px 40px;
   }
+}
+
+/* Making Sign in for Login page */
+.signin-main {
+  background-color: #191919;
+}
+.userinput {
+  position: relative;
+  display: flex;
+  height: 110vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 1s ease;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  animation: fadeBounce 1s forwards;
+}
+.userinput .formcontainer {
+  position: relative;
+  background-color: #999;
+  width: 70%;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.userinput .formcontainer .user {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.userinput .formcontainer .user .imgbox {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.userinput .formcontainer .user .imgbox img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.userinput .formcontainer .user .formbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  padding: 40px;
+  transition: 0.5s ease;
+}
+.userinput .formcontainer .user .formbox h2 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #555;
+}
+.userinput .formcontainer .user .formbox .signin-text {
+  position: relative;
+  bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #555;
+}
+section .formcontainer .user .formbox input {
+  width: 100%;
+  padding: 15px;
+  background-color: #f5f5f5;
+  color: #555;
+  border: none;
+  box-shadow: none;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 9px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+section .formcontainer .user .formbox input[type="submit"] {
+  max-width: 100px;
+  background: #181818;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+section .formcontainer .user.signupbox .formbox input[type="submit"] {
+  background: #181818;
+}
+section .formcontainer .user .formbox .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 450;
+}
+section .formcontainer .user .formbox .signup-policy a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #181818;
+}
+section .formcontainer .user .formbox .signup a {
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #181818;
+}
+.userinput .formcontainer .signupbox {
+  pointer-events: none;
+}
+.userinput .formcontainer.formcontainer.active .signupbox {
+  pointer-events: initial;
+}
+.userinput .formcontainer .signupbox .formbox {
+  top: 100%;
+}
+.userinput .formcontainer.active .signupbox .formbox {
+  top: 0;
+}
+.userinput .formcontainer .signupbox .imgbox {
+  transition: 0.5s ease;
+  top: -100%;
+}
+.userinput .formcontainer.active .signupbox .imgbox {
+  top: 0;
+}
+.userinput .formcontainer .signinbox .formbox {
+  top: 0;
+}
+.userinput .formcontainer.formcontainer.active .signinbox .formbox {
+  top: 100%;
+}
+.userinput .formcontainer .signinbox .imgbox {
+  transition: 0.5s ease;
+  top: 0;
+}
+.userinput .formcontainer.formcontainer.active .signinbox .imgbox {
+  top: -100%;
 }
