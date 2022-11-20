@@ -262,7 +262,7 @@ footer .footer-container .section.subscribe {
   overflow: hidden;
   visibility: hidden;
 }
-input[type="email"]
+.subscribe input[type="email"]
 {
   width: 95%;
   display: block;
@@ -273,7 +273,7 @@ input[type="email"]
   border-radius: 2px;
   outline: none;
 }
-input[type="submit"]
+.subscribe input[type="submit"]
 {
   width: 50%;
   display: block;
@@ -288,18 +288,6 @@ input[type="submit"]
   cursor: pointer;
   text-transform: uppercase;
 }
-#nameError {
-  display: none;
-  font-size: 0.8em;
-}
-
-#nameError.visible {
-  display: block;
-}
-
-input.invalid {
-  border-color: red;
-}
 footer .footer-container h2 {
   position: relative;
   color: #fff;
@@ -307,7 +295,6 @@ footer .footer-container h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-
 footer p,
 footer span,
 footer li a {
