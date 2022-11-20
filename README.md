@@ -26,10 +26,10 @@ This website is for shoe collectors and people who are looking to buy trending, 
 ## Testing
 - To be filled in
 ## Credits
-[Shoe Images](https://www.pexels.com/)
-[Shoe Images](https://pngimg.com/)
-[Logo Image](https://logo.com/)
-[Icons](https://fontawesome.com/)
+- [Shoe Images](https://www.pexels.com/)
+- [Shoe Images](https://pngimg.com/)
+- [Logo Image](https://logo.com/)
+- [Icons](https://fontawesome.com/)
 ### Content
 
 ### Media
