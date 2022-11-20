@@ -183,7 +183,7 @@ nav {
 .about {
   width: 100%;
   padding: 78px 0px;
-  background-color: #191919;
+  background-color: #181818;
 }
 .about img {
   height: auto;
@@ -201,7 +201,7 @@ nav {
   justify-content: space-around;
 }
 .about-text h1 {
-  color: white;
+  color: #fff;
   font-size: 70px;
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -541,4 +541,135 @@ section .formcontainer .user .formbox .signup a {
 }
 .userinput .formcontainer.formcontainer.active .signinbox .imgbox {
   top: -100%;
+}
+/* Main content in products page */
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #191919;
+  overflow: hidden;
+  padding: 100px 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.products-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+.products-container .shoe-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  margin: 20px 40px;
+  background: rgba(44, 41, 41, 0.2);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+}
+.products-container .shoe-card .shoe-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  transition: 0.5s ease-in-out;
+}
+.products-container .shoe-card:hover .shoe-img {
+  transform: translateY(-90px);
+}
+.products-container .shoe-card .shoe-img img {
+  max-width: 100%;
+  margin: 0 0 20px;
+  transition: 0.5s ease-in-out;
+}
+.products-container .shoe-card .shoe-img img.adjust {
+  margin: 0px;
+  content: inherit;
+}
+.products-container .shoe-card:hover .shoe-img img {
+  transform: translate(-15px, -35px) rotate(-20deg) scale(1.4);
+}
+.products-container .shoe-card .shoe-img h2 {
+  color: #fff;
+  font-weight: 600;
+}
+.products-container .shoe-card .shoe-img h2.adjust {
+  position: relative;
+  bottom: 12px;
+}
+.products-container .shoe-card .shoe-info {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 20px;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.products-container .shoe-card:hover .shoe-info {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-45px);
+}
+
+.products-container .shoe-card .shoe-info .size,
+.products-container .shoe-card .shoe-info .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+}
+.products-container .shoe-card .shoe-info .size h3,
+.products-container .shoe-card .shoe-info .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.products-container .shoe-card .shoe-info .size span {
+  width: 28px;
+  height: 25px;
+  line-height: 26px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.products-container .shoe-card .shoe-info .size span:hover,
+.products-container .shoe-card .shoe-info a:hover {
+  background: #d2042d;
+}
+.products-container .shoe-card .shoe-info a {
+  position: relative;
+  display: inline-block;
+  color: #111;
+  top: 10px;
+  padding: 15px 35px;
+  background: #fff;
+  font-weight: 700;
+  border-radius: 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s ease;
 }
