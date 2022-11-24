@@ -58,14 +58,27 @@ body {
   }
 }
 @keyframes rainbow-colors {
-  0% { color: hsl(197, 97%, 66%, 1); }
-  25% { color: hsl(0, 100%, 100%, 1); }
-  50% { color: hsl(348, 83%, 81%, 1); }
-  75% { color: hsl(.75turn, 90%, 65%); }
-  100% { color: hsl(1turn, 90%, 65%); }
+  0% {
+    color: hsl(197, 97%, 66%, 1);
+  }
+  25% {
+    color: hsl(0, 100%, 100%, 1);
+  }
+  50% {
+    color: hsl(348, 83%, 81%, 1);
+  }
+  75% {
+    color: hsl(0.75turn, 90%, 65%);
+  }
+  100% {
+    color: hsl(1turn, 90%, 65%);
+  }
 }
-/* Making my nav header */
+/* Making my nav header Start*/
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #f5f5f5;
   position: relative;
   transition: 0.5s;
@@ -74,14 +87,14 @@ header {
   width: 97%;
   height: auto;
   margin: auto;
-  height: 79.8px;
+  height: 12vh;
 }
 #logo {
-  width: 5%;
+  width: 4em;
   position: relative;
   top: 6px;
   left: 30px;
-  animation-duration: 0.5s;
+  animation-duration: 0.5s ease;
   animation-name: animate-fade;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
@@ -92,14 +105,18 @@ nav {
   opacity: 0;
   animation: fadeBounce 1s forwards;
 }
+.navigation ul {
+  display: flex;
+}
 .navigation {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
 }
 .navigation li {
   list-style-image: none;
-  margin: 0 23px;
+  margin: 0 25px;
   transition: 0.5ms;
   float: left;
   margin-top: 23px;
@@ -143,7 +160,40 @@ nav {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
-/* Image slider for main content of Home page */
+header .menu {
+  display: none;
+}
+@media (max-width: 880px) {
+  header .menu {
+    display: block;
+    cursor: pointer;
+  }
+  header .menu .line {
+    width: 30px;
+    height: 3px;
+    background: #111;
+    margin: 6px 0;
+  }
+  .navigation {
+    height: 450px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #fff;
+    transition: 0.5s;
+  }
+  .navigation ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+  }
+}
+/* Making my nav header End*/
+/* Image slider for main content (Home page) Start */
 .image-sliders {
   position: relative;
   width: 100%;
@@ -154,6 +204,7 @@ nav {
   z-index: 1;
   position: absolute;
   width: 100%;
+  height: 100vh;
   clip-path: inset(0 100% 0 0);
 }
 .image-sliders .slides.active {
@@ -187,6 +238,13 @@ nav {
   background: #111;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
 }
+@media (max-width: 1024px) {
+  .image-sliders {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+/* Image slider for main content (Home page) End */
 /* About Us (Home Page) Start */
 article .about {
   width: 100%;
@@ -222,6 +280,47 @@ article .about {
   line-height: 30px;
   font-size: 18px;
   margin-bottom: 45px;
+}
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about img {
+    width: 200px;
+    align-self: center;
+  }
+  .about-text h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .about img {
+    width: 150px;
+  }
+  .about-text h1 {
+    font-size: 60px;
+  }
+  .about-text p {
+    font-size: 16px;
+    width: 65%;
+    height: auto;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .about img {
+    width: 100px;
+  }
+  .about-text h1 {
+    font-size: 50px;
+  }
+  .about-text p {
+    text-align: center;
+    font-size: 12px;
+    width: 45%;
+    height: auto;
+    margin: auto;
+  }
 }
 /* About Us (Home Page) End */
 /* Footer for website Start*/
@@ -509,16 +608,14 @@ section .formcontainer .user .formbox .signup {
   text-transform: uppercase;
   font-weight: 450;
 }
-section .formcontainer .user .formbox .signup-policy a {
+section .formcontainer .user .formbox .signup-policy a,
+section .formcontainer .user .formbox .signup a {
   font-weight: 600;
   font-size: 16px;
   color: #181818;
 }
 section .formcontainer .user .formbox .signup a {
-  font-weight: 600;
-  font-size: 16px;
   text-decoration: none;
-  color: #181818;
 }
 .userinput .formcontainer .signupbox {
   pointer-events: none;
@@ -551,7 +648,74 @@ section .formcontainer .user .formbox .signup a {
 }
 .userinput .formcontainer.formcontainer.active .signinbox .imgbox {
   top: -100%;
+}@media (max-width: 1286px) {
+  .userinput .formcontainer .user .formbox h2 {
+    font-size: 25px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    clear: both;
+  }
+  section .formcontainer .user .formbox .signup-policy a,
+  section .formcontainer .user .formbox .signup a {
+    font-size: 15px;
+    font-weight: 550;
+  }
 }
+@media (max-width: 1024px) {
+  .userinput.card.formcontainer {
+    max-width: 400px;
+  }
+  .userinput .formcontainer .imgbox {
+    display: none;
+  }
+  .userinput .formcontainer .user .formbox {
+    width: 100%;
+  }
+  .userinput .formcontainer.active .signinbox .formbox {
+    top: -100%;
+  }
+  .userinput .formcontainer .user .formbox h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .userinput .formcontainer {
+    width: 105%;
+  }
+}
+@media (max-width: 716px) {
+  .userinput .formcontainer .user .formbox h2 {
+    font-size: 25px;
+  }
+  .userinput .formcontainer .user .formbox {
+    width: 100%;
+  }
+}
+@media (max-width: 716px) {
+  section .formcontainer .user.signupbox .formbox input[type="submit"] {
+    display: block;
+  }
+  .userinput .formcontainer .user .formbox h2,
+  .userinput .formcontainer .user .formbox .signin-text {
+    font-size: 20px;
+  }
+  section .formcontainer .user .formbox .signup{
+    font-size: 15px;
+  }
+  section .formcontainer .user .formbox .signup-policy a{
+    font-size: 17px;
+  }
+  section .formcontainer .user .formbox .signup-policy p{
+    font-size: 9px;
+  }
+  section .formcontainer .user .formbox input[type="submit"]{
+    font-size: 13px;
+    padding: 10px;
+  }
+
+}
+
 /* Making Sign In (Login Page) End*/
 /* Shoe Showcase (Products Page) Start*/
 .products {
@@ -686,8 +850,7 @@ section .formcontainer .user .formbox .signup a {
 }
 /* Shoe Showcase (Products Page) End*/
 /* Guidelines (Guidelines Page) Start*/
-main .guidelines-container
-{
+main .guidelines-container {
   min-height: 100vh;
   width: 90%;
   margin: auto;
@@ -695,22 +858,18 @@ main .guidelines-container
   display: flex;
   flex-direction: column;
 }
-main .guidelines-container div
-{
+main .guidelines-container div {
   padding-bottom: 30px;
 }
 
-main .guidelines-container h1
-{
+main .guidelines-container h1 {
   font-weight: 500;
   letter-spacing: 0.2px;
   text-transform: uppercase;
   text-decoration: underline #d2042d;
 }
-main .guidelines-container p
-{
+main .guidelines-container p {
   font-weight: 400;
   font-size: 18px;
 }
 /* Guidelines (Guidelines Page) End*/
-
