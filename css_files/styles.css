@@ -121,7 +121,6 @@ nav {
   list-style-image: none;
   margin: 0 25px;
   transition: 0.5ms;
-  float: left;
   margin-top: 23px;
 }
 .navigation li a {
