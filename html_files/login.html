@@ -15,11 +15,53 @@
       rel="stylesheet"
     />
     <script src="../js_files/login.js" defer></script>
+    <script src="../js_files/hidden-nav.js" defer></script>
     <link rel="stylesheet" href="../css_files/normalize.css" />
     <link rel="stylesheet" href="../css_files/styles.css" />
     <title>Login</title>
   </head>
   <body>
+      <!-- Hidden navigation for smaller screen sizes-->
+  <div class="navigation-hidden">
+    <div class="toggle"></div>
+      <ul>
+        <li>
+          <a href="../index.html" target="_blank">
+            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+            <span class="hidden-link">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="products.html" target="_blank">
+            <span class="icon"><i class="fa solid fa-shop" aria-hidden="true"></i></i>
+            </span>
+            <span class="hidden-link">Products</span>
+          </a>
+        </li>
+        <li>
+          <a href="guidelines.html" target="_blank">
+            <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i>
+            </span>
+            <span class="hidden-link">Guidelines</span>
+          </a>
+        </li>
+        <li>
+          <a href="#linktofooter">
+            <span class="icon"><i class="fa solid fa-phone" aria-hidden="true"></i></i>
+            </span>
+            <span class="hidden-link">Contact</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <span class="icon"><i class="fa solid fa-user" aria-hidden="true"></i></i>
+            </span>
+            <span class="hidden-link">Login</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <!-- End of hidden navigation-->
     <!-- Header -->
     <header>
       <div class="nav-container">
