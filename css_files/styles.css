@@ -164,6 +164,7 @@ nav {
 }
 /* Making my nav header End*/
 /* Dropdown menu hidden Start*/
+
 .navigation-hidden {
   display: none;
   position: absolute;
@@ -277,7 +278,7 @@ nav {
 /* Image slider for main content (Home page) Start */
 .image-sliders {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   background: #111;
 }
@@ -320,9 +321,12 @@ nav {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
 }
 @media (max-width: 1024px) {
-  .image-sliders {
+  .image-sliders .slides img {
+    display: grid;
+    height: 100%;
     max-width: 100%;
-    max-height: auto;
+    max-height: 100vh;
+    margin: auto;
   }
 }
 /* Image slider for main content (Home page) End */
@@ -331,6 +335,7 @@ article .about {
   width: 100%;
   padding: 78px 0px;
   background-color: #181818;
+  overflow:hidden;
 }
 .about img {
   height: auto;
@@ -338,6 +343,7 @@ article .about {
 }
 .about-text {
   width: 600px;
+  overflow:hidden;
 }
 .about-container {
   width: 1130px;
@@ -378,6 +384,7 @@ article .about {
   .about img {
     width: 150px;
   }
+  
   .about-text h1 {
     font-size: 60px;
   }
@@ -962,3 +969,66 @@ main .guidelines-container p {
   }
 }
 /* Guidelines (Guidelines Page) End*/
+/* Shopping Cart (Products Page) Start*/
+/* Shopping Cart (Products Page) End*/
+.cart {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  color: #d2042d;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ .cart i {
+	 font-size: 25px;
+	 color: #d2042d;
+}
+.cart:before {
+  content: attr(data-totalitems);
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #d2042d;
+  line-height: 24px;
+  padding: 0 5px;
+  height: 24px;
+  min-width: 24px;
+  color: white;
+  text-align: center;
+  border-radius: 24px;
+}
+.cart.shake {
+  animation: shakeCart 0.4s ease-in-out forwards;
+}
+@keyframes xAxis {
+  100% {
+    transform: translateX(calc(50vw - 105px));
+ }
+}
+@keyframes yAxis {
+  100% {
+    transform: translateY(calc(-50vh + 75px));
+ }
+}
+@keyframes shakeCart {
+  25% {
+    transform: translateX(6px);
+ }
+  50% {
+    transform: translateX(-4px);
+ }
+  75% {
+    transform: translateX(2px);
+ }
+  100% {
+    transform: translateX(0);
+ }
+}
