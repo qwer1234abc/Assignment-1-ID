@@ -94,7 +94,7 @@ header {
   position: relative;
   top: 6px;
   left: 30px;
-  animation-duration: 0.5s ease;
+  animation-duration: 0.5s;
   animation-name: animate-fade;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
@@ -518,10 +518,6 @@ footer li a {
 }
 .socialmedia li a .fa-brands.fa-instagram {
   font-weight: bolder;
-}
-.quicklinks {
-  position: relative;
-  width: 25;
 }
 .quicklinks ul li {
   list-style: none;
