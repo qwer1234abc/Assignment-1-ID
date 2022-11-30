@@ -335,7 +335,7 @@ article .about {
   width: 100%;
   padding: 78px 0px;
   background-color: #181818;
-  overflow:hidden;
+  overflow: hidden;
 }
 .about img {
   height: auto;
@@ -343,7 +343,7 @@ article .about {
 }
 .about-text {
   width: 600px;
-  overflow:hidden;
+  overflow: hidden;
 }
 .about-container {
   width: 1130px;
@@ -384,7 +384,7 @@ article .about {
   .about img {
     width: 150px;
   }
-  
+
   .about-text h1 {
     font-size: 60px;
   }
@@ -936,6 +936,47 @@ section .formcontainer .user .formbox .signup a {
   text-decoration: none;
   transition: 0.5s ease;
 }
+@media (max-width: 815px) {
+  .products-container .shoe-card {
+    width: 250px;
+    height: 330px;
+  }
+}
+@media (max-width: 716px) {
+  .products-container .shoe-card {
+    width: 220px;
+    height: 300px;
+  }
+  .products-container .shoe-card .shoe-img h2 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .products-container .shoe-card .shoe-info .size span {
+    width: 25px;
+    height: 24px;
+  }
+  .products-container .shoe-card .shoe-info .size h3 {
+    font-size: 14px;
+  }
+  .products-container .shoe-card .shoe-info a {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 656px) {
+  .products-container .shoe-card {
+    width: 200px;
+    height: 280px;
+  }
+  .products-container .shoe-card .shoe-img h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 616px) {
+  .products-container .shoe-card {
+    width: 220px;
+    height: 260px;
+  }
+}
 /* Shoe Showcase (Products Page) End*/
 /* Guidelines (Guidelines Page) Start*/
 main .guidelines-container {
@@ -985,9 +1026,9 @@ main .guidelines-container p {
   border-radius: 5px;
   cursor: pointer;
 }
- .cart i {
-	 font-size: 25px;
-	 color: #d2042d;
+.cart i {
+  font-size: 25px;
+  color: #d2042d;
 }
 .cart:before {
   content: attr(data-totalitems);
@@ -1011,24 +1052,24 @@ main .guidelines-container p {
 @keyframes xAxis {
   100% {
     transform: translateX(calc(50vw - 105px));
- }
+  }
 }
 @keyframes yAxis {
   100% {
     transform: translateY(calc(-50vh + 75px));
- }
+  }
 }
 @keyframes shakeCart {
   25% {
     transform: translateX(6px);
- }
+  }
   50% {
     transform: translateX(-4px);
- }
+  }
   75% {
     transform: translateX(2px);
- }
+  }
   100% {
     transform: translateX(0);
- }
+  }
 }
