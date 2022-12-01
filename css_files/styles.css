@@ -441,13 +441,6 @@ footer .footer-container .section {
 footer .footer-container .section.subscribe {
   width: 20%;
 }
-.hidden-label {
-  position: absolute;
-  height: 0;
-  width: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
 .subscribe input[type="email"] {
   width: 95%;
   display: block;
