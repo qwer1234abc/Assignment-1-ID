@@ -1,6 +1,6 @@
 # ID Assignment 1: KIX
 
-A fully fictional-based shoe retail store. Kix is a newly set-up shoe retailer company without many stores across Singapore. Our website will contain everything about our company as well as our shoes available, which can be shopped online. This will ultimately lead to our company name being more popular and more well-recognized, which we can use ads to further enhance the gains.
+A fully fictional-based shoe retail store. KIX is a newly set-up shoe retailer company without many stores across Singapore. Our website will contain everything about our company as well as our shoes available, which can be shopped online. This will ultimately lead to our company name being more popular and more well-recognized, which we can use ads to further enhance the gains.
 
 Moreover, with Covid-19 being a issue, many people, including myself, would not want to leave our homes. Our website would allow customers to shop online as well as getting more people to know about our company, which will greatly increase the company's sales. With this website, it will also increase our company's credibility as we will gain online presence.
 
@@ -33,6 +33,7 @@ This website is for shoe collectors and people who are looking to buy trending, 
 - Feature to add: After user sign in, a profile icon appears which showcases the user profile when clicked in.
 - Store the user data when the sign up so when they they sign in, the sign in must match the one in the data for it to be successful and login successfully.
 - Feature to add: Real guidelines instead of lorem ipsum as guidelines are copyrighted and illegal to copy.
+
 ## Technologies Used
 
 - [HTML](https://html.com/)
@@ -45,7 +46,10 @@ This website is for shoe collectors and people who are looking to buy trending, 
   - Used for icons.
 - [JQuery](https://jquery.com/)
   - Used to simplify DOM manipulation.
+
 ## Testing
+
+- Test
 
 1. Subscribe form at the footer:
    1. Go to any page and scroll to the footer
@@ -65,12 +69,17 @@ This website is for shoe collectors and people who are looking to buy trending, 
    5. Try to submit the form with a valid input and verify that the page reloads.
 
 - Media
+
   - Header Navigation: On smaller screen sizes (where there is not enough space left to fit the original desktop nav), a dropdown menu is created for easier readibility and accessibility.
   - About Us section: Starting from medium screen sizes (tablets), the information is arranged in a column direction, vertically and as screen size gets smaller, text gets smaller
   - Footer: Starting from medium screen sizes (tablets), information is displayed in a column direction vertically and text gets smaller when screen size decreases.
   - Products page: As screen size decreases, font size and weight decreases. Width and height of shoe cards also decreases. And as it in display wrap, amount of shoe cards in one row decreases from 3 to 2 to 1 bases on screen size.
   - Guidelines page: Font size decreases based on screen size.
   - Login page: From medium screen sizes (1024px) onwards, login and sign in picture are removed and would only show the rest of the information other than the picture. Font size gets smaller as screen gets smaller. Width of box gets smaller and height of box increases to fit the smaller screen sizes.
+
+- Bugs
+  - On safari browsers, logo is slightly mispositioned and submit button for subscription at the footer is thinner compared to normal browsers.
+
 ## Credits
 
 - [Shoe Images](https://www.pexels.com/)
@@ -79,13 +88,15 @@ This website is for shoe collectors and people who are looking to buy trending, 
 - [Icons](https://fontawesome.com/)
 
 ### Content
+
 - All text are fictional and made by myself
-- For my design rational, I have decided to follow the [Nike](https://www.nike.com/sg/) and [Adidas](https://www.adidas.com.sg/) website with plain contrasting colors ranging from black, grey to white. I have also used a primary color 
+- For my design rational, I have decided to follow the [Nike](https://www.nike.com/sg/) and [Adidas](https://www.adidas.com.sg/) website with plain contrasting colors ranging from black, grey to white. I have also used a primary color
+
 ### Media
 
 - The images are used from [here](https://www.pexels.com/) and [here](https://pngimg.com/)
-- Icons are used from [here]((https://fontawesome.com/))
-- Logos used from [here]((https://logo.com/))
+- Icons are used from [here](<(https://fontawesome.com/)>)
+- Logos used from [here](<(https://logo.com/)>)
 
 ### Acknowledgements
 
