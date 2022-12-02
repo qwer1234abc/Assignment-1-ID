@@ -1,6 +1,5 @@
 /* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -12,10 +11,6 @@ html {
 }
 body {
   background: #fff;
-  /*background-color: #4158d0;
-    background: #0f2027;
-    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);*/
   min-height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -72,6 +67,20 @@ body {
   }
   100% {
     color: hsl(1turn, 90%, 65%);
+  }
+}
+@keyframes shakeCart {
+  25% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 /* Making my nav header Start*/
@@ -164,7 +173,6 @@ nav {
 }
 /* Making my nav header End*/
 /* Dropdown menu hidden Start*/
-
 .navigation-hidden {
   display: none;
   position: absolute;
@@ -500,7 +508,6 @@ footer li a {
   border-radius: 4px;
   background-color: #7e7e7e;
 }
-
 .socialmedia li a:hover {
   background-color: #fff;
 }
@@ -540,7 +547,6 @@ footer li a {
   font-size: 20px;
   margin-right: 10px;
 }
-
 .copyright {
   width: 100%;
   background: #181818;
@@ -552,7 +558,6 @@ footer li a {
   footer {
     padding: 40px;
   }
-
   footer .footer-container {
     flex-direction: column;
   }
@@ -560,7 +565,6 @@ footer li a {
     margin-right: 0;
     margin-bottom: 40px;
   }
-
   footer .footer-container .section.subscribe,
   .quicklinks {
     width: 100%;
@@ -792,7 +796,6 @@ section .formcontainer .user .formbox .signup a {
     padding: 10px;
   }
 }
-
 /* Making Sign In (Login Page) End*/
 /* Shoe Showcase (Products Page) Start*/
 .products {
@@ -979,7 +982,6 @@ main .guidelines-container {
 main .guidelines-container div {
   padding-bottom: 30px;
 }
-
 main .guidelines-container h1 {
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -1037,28 +1039,4 @@ main .guidelines-container p {
 }
 .cart.shake {
   animation: shakeCart 0.4s ease-in-out forwards;
-}
-@keyframes xAxis {
-  100% {
-    transform: translateX(calc(50vw - 105px));
-  }
-}
-@keyframes yAxis {
-  100% {
-    transform: translateY(calc(-50vh + 75px));
-  }
-}
-@keyframes shakeCart {
-  25% {
-    transform: translateX(6px);
-  }
-  50% {
-    transform: translateX(-4px);
-  }
-  75% {
-    transform: translateX(2px);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
