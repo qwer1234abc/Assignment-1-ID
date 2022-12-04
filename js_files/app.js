@@ -19,7 +19,7 @@ btns.forEach((btn, i) => {
   });
 });
 // Auto Navigation
-let repeat = function (activeClass) {
+let repeat = function () {
   let active = document.getElementsByClassName("active");
   let i = 1;
 
