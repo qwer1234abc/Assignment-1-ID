@@ -13,8 +13,7 @@ This website is for shoe collectors and people who are looking to buy trending, 
 - As a user, I want to know more about the guidelines of KIX, I can go to the guidelines page and get information there such as, terms of use, privacy policy and help, etc.
 - As a user, I want to sign in or create an account on the KIX's website. I can go to the login page and I will need to fill in a form to sign in. If I do not have an account, I can click the "Sign Up" link to sign up for an account instead.
 - As a user, I can navigate to the footer's page to find out on the contact info on KIX as well as entering email for 10% on my next order. Moreover, if I want to vist KIX's socials, I can click onto the social media icons and be directed there.
-
-[Wireframe](ID_S10244263E_BehJueenHaoKelvin_Assg1_wireframe.xd)
+- [Wireframe](ID_S10244263E_BehJueenHaoKelvin_Assg1_wireframe.xd)
 
 ## Features
 
@@ -90,7 +89,7 @@ This website is for shoe collectors and people who are looking to buy trending, 
 ### Content
 
 - All text are fictional and made by myself
-- For my design rational, I have decided to follow the [Nike](https://www.nike.com/sg/) and [Adidas](https://www.adidas.com.sg/) website with plain contrasting colors ranging from black, grey to white. I have also used a primary color
+- For my design rational, I have decided to follow the [Nike](https://www.nike.com/sg/) and [Adidas](https://www.adidas.com.sg/) website with plain contrasting colors ranging from black, grey to white. I have also used a primary color cherry red.
 
 ### Media
 
